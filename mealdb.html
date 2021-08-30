@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khabar Dibi Naki Bol</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <h1 class="text-center text-primary mt-5">Search Your Food Here</h1>
+    <div id="detailInfo" class="w-50 mx-auto">
+        <h3 class="text-center text-success">About this food...</h3>
+    </div>
+    <div class="input-group mb-3 w-50 mx-auto">
+        <input id="search-text" type="text" class="form-control" placeholder="Search Your Food..." aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button onclick="createCard()" class="btn btn-outline-secondary" type="button" id="button-search">Search</button>
+    </div>
+
+    <div id="cards" class="row row-cols-1 row-cols-md-3 g-4 container mx-auto">
+        
+    </div>
+
+    <script src="js/mealdb.js"></script>
+</body>
+</html>
