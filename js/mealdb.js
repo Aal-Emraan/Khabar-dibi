@@ -38,11 +38,14 @@ const card = (data) => {
     
 }
 
-const loadDetialsInfo = (meal) => {
+const loadDetialsInfo = async meal => {
     const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${meal}`;
-    fetch(url)
-    .then(res => res.json())
-    .then(data => detail(data.meals[0]))
+    const res = await fetch(url);
+    const data = await res.json();
+    detail(data.meals[0]);
+    // fetch(url)
+    // .then(res => res.json())
+    // .then(data => detail(data.meals[0]))
 }
 
 const detail = data => {
